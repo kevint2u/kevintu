@@ -104,7 +104,7 @@ progress[value]::-webkit-progress-value {
 #p1 { 
     position: relative; 
 	background-color: white;
-  background: url(../resources/newyork.jpg) 50% 0 repeat fixed; 
+  background: url(../resources/bokeh3.gif) 50% 0 repeat fixed; 
   background-size:cover;
   background-repeat: no-repeat;
   min-height: 400px; 
