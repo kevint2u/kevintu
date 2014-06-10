@@ -1,3 +1,13 @@
+// Loading Page
+$(window).load(function() {
+    window.setTimeout(hideLanding,1000)
+  });
+function hideLanding(){
+    $(this).scrollTop(0);
+    $('#loading').fadeOut(300);
+}
+
+// Parallax Scrolling
 $(document).ready(function(){
 	$window = $(window);
     $('section[data-type="background"]').each(function(){
