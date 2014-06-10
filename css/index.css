@@ -153,12 +153,21 @@ progress[value]::-webkit-progress-value {
   -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
-#p2_head {
+#p2_head1 {
 	position: relative; 
 	font-family: 'GothamLight', sans-serif;
 	color:black;
 	text-align: center;
-	top:50px;
+	top:60px;
+  font-size: 15px;
+} 
+#p2_head2 {
+  position: relative; 
+  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+  color:black;
+  text-align: center;
+  top:120px;
+  font-size: 25px;
 } 
 #p2 article { 
   height: 100px; 
