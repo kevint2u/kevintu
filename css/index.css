@@ -113,7 +113,7 @@ progress[value]::-webkit-progress-value {
   width: 100%; 
   max-width: 1920px; 
 }
-#p1 article { 
+#article-name { 
 	font-family: 'GothamBold', sans-serif;
   height: 100px; 
   position: absolute; 
@@ -122,6 +122,21 @@ progress[value]::-webkit-progress-value {
   width: 100%;
   color:white; 
   font-size: 110px;
+}
+#article-triangles {
+  position: absolute;
+  top:40%;
+  width: 100%;
+  text-align: center;
+}
+#article-triangles-img {
+  width: 600px;
+  height: auto;
+  opacity: 0.2;
+  margin-top: -105px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 #p2 { 
 	color:black;
