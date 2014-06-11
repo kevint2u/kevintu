@@ -4,9 +4,9 @@ $(window).load(function() {
     // progress bar animation
     var bar = document.getElementById('progress-bar'),
         fallback = document.getElementById('download-progress'),
-        loaded = 0;
+        loaded = 10;
     var load = function() {
-        loaded += Math.floor((Math.random() * 8) + 1);
+        loaded += Math.floor((Math.random() * 2) + 3);
         bar.value = loaded;
         $(fallback).empty().append("HTML5 progress tag not supported: ");
         if (loaded == 100) {
@@ -17,13 +17,13 @@ $(window).load(function() {
 
     var beginLoad = setInterval(function() {
         load();
-    }, 50);
+    }, 20);
     // Set extra timeout for loading page
-    window.setTimeout(hideLanding,1500);
+    window.setTimeout(hideLanding,1750);
   });
 function hideLanding(){
     $(this).scrollTop(0);
-    $('#loading').fadeOut(250);
+    $('#loading').fadeOut(500);
 }
 
 // Parallax Scrolling
