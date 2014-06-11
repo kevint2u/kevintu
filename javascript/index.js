@@ -17,7 +17,7 @@ $(window).load(function() {
 
     var beginLoad = setInterval(function() {
         load();
-    }, 20);
+    }, 10);
     // Set extra timeout for loading page
     window.setTimeout(hideLanding,1750);
   });
