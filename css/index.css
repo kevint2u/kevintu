@@ -191,7 +191,7 @@ progress[value]::-webkit-progress-value {
   margin-left: -500px;
   position: absolute;
   top:250px;
-  min-width: 1000px;
+  width: 1000px;
   height: auto;
   display: table-cell;
 }
@@ -213,6 +213,38 @@ progress[value]::-webkit-progress-value {
   font-size: 100px;
   position: relative;
 }
+
+#img-pebble1 {
+  position: relative;
+  width: 200px;
+  height: auto;
+  line-height: 400px;
+  vertical-align: middle;
+  margin-top: -20px;
+}
+#img-pebble2 {
+  position: relative;
+  width: 190px;
+  height: auto;
+  line-height: 400px;
+  vertical-align: middle;
+  margin-top: -20px;
+}
+#logo-pebble { 
+  position: relative;
+  width: 250px;
+  height: auto;
+  line-height: 400px;
+  vertical-align: middle;
+  margin-top: -20px;
+  margin-right: -10px;
+}
+
+ 
+
+
+
+
 
 
 
