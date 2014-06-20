@@ -48,25 +48,28 @@ $(document).ready(function(){
             $bgobj.css({ backgroundPosition: coords });
         }); 
     });    
-});
-
-// Fading of logo
-var fadeStart=100 // 100px scroll or less will equiv to 1 opacity
-    ,fadeUntil=200 // 200px scroll or more will equiv to 0 opacity
-    ,fading = $('#loading-wrapper')
-;
-
-$(window).bind('scroll', function(){
-    var offset = $(document).scrollTop()
-        ,opacity=0
+    // Fading of logo
+    var fadeStart=000 // 100px scroll or less will equiv to 1 opacity
+        ,fadeUntil=500 // 200px scroll or more will equiv to 0 opacity
+        ,fading = $('#article-name')
+        ,fading2 = $('#article-triangles')
     ;
-    if( offset<=fadeStart ){
-        opacity=1;
-    }else if( offset<=fadeUntil ){
-        opacity=1-offset/fadeUntil;
-    }
-    fading.css('opacity',opacity);
+
+    $(window).bind('scroll', function(){
+        var offset = $(document).scrollTop()
+            ,opacity=0
+        ;
+        if( offset<=fadeStart ){
+            opacity=1;
+        }else if( offset<=fadeUntil ){
+            opacity=1-offset/fadeUntil;
+        }
+        fading.css('opacity',opacity);
+        fading2.css('opacity',opacity);
+    });
 });
+
+
 // Create HTML5 elements for IE
   
 document.createElement("article");
