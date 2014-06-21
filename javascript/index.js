@@ -1,7 +1,7 @@
 // Loading Page
 
 $(window).load(function() {
-
+    $(this).scrollTop(0);
     // progress bar animation
     var bar = document.getElementById('progress-bar'),
         fallback = document.getElementById('download-progress'),
@@ -20,16 +20,16 @@ $(window).load(function() {
         load();
     }, 10);
     // Set extra timeout for loading page
+    $(this).scrollTop(0);
     window.setTimeout(hideLanding,1750);
   });
 function hideLanding(){
+    $(this).scrollTop(0);
     $('#loading').fadeOut(500);
 }
 
 // Parallax Scrolling
 $(document).ready(function(){
-    $(document).scrollTop(0);
-    $(window).scrollTop(0);
 	$window = $(window);
     $('section[data-type="background"]').each(function(){
         var $bgobj = $(this); // assigning the object
@@ -64,26 +64,26 @@ $(document).ready(function(){
         fading2.css('opacity',opacity);
     });
 
-
-
-    $('.row').each(function(){
-
-    });    
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
 
         /* Check the location of each desired element */
         $('.row').each( function(i){
 
-            var bottom_of_object = $(this).position().top + $(this).outerHeight() + 100;
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop();// + $(window).height();
 
 
             /* If the object is completely visible in the window, fade it in */
-            if( bottom_of_window > bottom_of_object ){
-                $(this).animate({'opacity':'1'},1000);
+            if( bottom_of_window > bottom_of_object && bottom_of_object > bottom_of_window - $(window).height()){
+                $(this).animate({'opacity':'1'},1500);
             }
-
+            // if(bottom_of_object < bottom_of_window){
+            //     $(this).animate({'opacity':'0'},1000);
+            // }
+            // if(bottom_of_object < bottom_of_window - $(window).height()){
+            //     $(this).animate({'opacity':'0'},1000);
+            // }
         }); 
 
     });
