@@ -1,6 +1,7 @@
 // Loading Page
 
 $(window).load(function() {
+
     // progress bar animation
     var bar = document.getElementById('progress-bar'),
         fallback = document.getElementById('download-progress'),
@@ -22,12 +23,13 @@ $(window).load(function() {
     window.setTimeout(hideLanding,1750);
   });
 function hideLanding(){
-    $(this).scrollTop(0);
     $('#loading').fadeOut(500);
 }
 
 // Parallax Scrolling
 $(document).ready(function(){
+    $(document).scrollTop(0);
+    $(window).scrollTop(0);
 	$window = $(window);
     $('section[data-type="background"]').each(function(){
         var $bgobj = $(this); // assigning the object
@@ -37,15 +39,9 @@ $(document).ready(function(){
              
             // Put together our final background position
             var coords = '50% ' + yPos + 'px';
-
-
-            // var xPos = ($window.scrollTop() / $bgobj.data('speed')); 
-             
-            // // Put together our final background position
-            // var coords = xPos + 'px' + ' 50%';
- 
             // Move the background
             $bgobj.css({ backgroundPosition: coords });
+
         }); 
     });    
     // Fading of logo
@@ -69,18 +65,28 @@ $(document).ready(function(){
     });
 
 
-    tiles = $("row").fadeTo(0, 0);
 
-    $(window).scroll(function(d,h) {
-        tiles.each(function(i) {
-            a = $(this).offset().top + $(this).height();
-            b = $(window).scrollTop() + $(window).height();
-            if (a < b) $(this).fadeTo(500,1);
-        });
+    $('.row').each(function(){
+
+    });    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+
+        /* Check the location of each desired element */
+        $('.row').each( function(i){
+
+            var bottom_of_object = $(this).position().top + $(this).outerHeight() + 100;
+            var bottom_of_window = $(window).scrollTop();// + $(window).height();
+
+
+            /* If the object is completely visible in the window, fade it in */
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'},1000);
+            }
+
+        }); 
+
     });
-
-
-
 });
 
 
