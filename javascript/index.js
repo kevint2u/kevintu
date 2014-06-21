@@ -50,7 +50,7 @@ $(document).ready(function(){
     });    
     // Fading of logo
     var fadeStart=000 // 100px scroll or less will equiv to 1 opacity
-        ,fadeUntil=500 // 200px scroll or more will equiv to 0 opacity
+        ,fadeUntil=350 // 200px scroll or more will equiv to 0 opacity
         ,fading = $('#article-name')
         ,fading2 = $('#article-triangles')
     ;
@@ -67,6 +67,20 @@ $(document).ready(function(){
         fading.css('opacity',opacity);
         fading2.css('opacity',opacity);
     });
+
+
+    tiles = $("row").fadeTo(0, 0);
+
+    $(window).scroll(function(d,h) {
+        tiles.each(function(i) {
+            a = $(this).offset().top + $(this).height();
+            b = $(window).scrollTop() + $(window).height();
+            if (a < b) $(this).fadeTo(500,1);
+        });
+    });
+
+
+
 });
 
 

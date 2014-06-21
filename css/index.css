@@ -77,7 +77,7 @@ progress[value]::-webkit-progress-value {
   left: 0;
   height: 100px;
   width: 100%;
-  
+
 }
 #loading-image {
   position: relative;
@@ -142,7 +142,7 @@ progress[value]::-webkit-progress-value {
 #p2 { 
 	color:black;
 	background-color: white;
-  min-height: 2500px; 
+  min-height: 4100px; 
   height: 100%; 
   margin: 0 auto; 
   width: 100%; 
@@ -159,6 +159,9 @@ progress[value]::-webkit-progress-value {
 	top:60px;
   font-size: 15px;
 } 
+#p2_head1:hover{
+ 
+}
 #p2_head2 {
   position: relative; 
   font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
@@ -167,6 +170,9 @@ progress[value]::-webkit-progress-value {
   top:115px;
   font-size: 20px;
 } 
+#p2_head2:hover{
+
+}
 
 .box {
   height: 20%;
@@ -195,39 +201,41 @@ progress[value]::-webkit-progress-value {
   width: 1000px;
   height: auto;
   display: table-cell;
+  margin-top: 250px;
 }
 .row{
   display: inline-table;
   width: 100%;
   height: 400px;
+  margin-top: 0px;
 }
 .column{
   margin: 0px;
   padding: 0px;
   font-family: 'GothamBold', sans-serif;
-  border:1px solid black;
   width: 33%;
-  height: 400px;
+  height: 350px;
   display: inline-block;
   text-align: center;
-  line-height: 400px;
   font-size: 100px;
   position: relative;
+  font-family: 'GothamLight', sans-serif;
+  font-size: 20px;
 }
 
 #img-pebble1 {
   position: relative;
-  width: 200px;
+  width: 150px;
   height: auto;
-  line-height: 400px;
+  line-height: 350px;
   vertical-align: middle;
   margin-top: -20px;
 }
 #img-pebble2 {
   position: relative;
-  width: 190px;
+  width: 150px;
   height: auto;
-  line-height: 400px;
+  line-height: 350px;
   vertical-align: middle;
   margin-top: -20px;
 }
@@ -235,7 +243,7 @@ progress[value]::-webkit-progress-value {
   position: relative;
   width: 250px;
   height: auto;
-  line-height: 400px;
+  line-height: 350px;
   vertical-align: middle;
   margin-top: -20px;
   margin-right: -10px;
@@ -244,7 +252,7 @@ progress[value]::-webkit-progress-value {
   position: relative;
   width: 240px;
   height: auto;
-  line-height: 400px;
+  line-height: 350px;
   vertical-align: middle;
   margin-top: 0px;
 }
@@ -252,23 +260,40 @@ progress[value]::-webkit-progress-value {
   position: relative;
   width: 230px;
   height: auto;
-  line-height: 400px;
+  line-height: 350px;
   vertical-align: middle;
   margin-top: -20px;
 }
 .text{
-  position: relative;
-  font-size: 20px;
-  text-align: center;
-  margin-top: 0px;
-  border: 1px solid red;
-  font-family: 'GothamLight', sans-serif;
   line-height: 20px;
 }
-
-
-
-
+.text2{
+  font-family: 'GothamBold', sans-serif;
+  font-size: 25px;
+}
+#mit_logo{
+  width: 250px; 
+  line-height: 350px;
+  position: relative;
+  vertical-align: middle;
+  height: auto;
+}
+#img-medialab {
+  position: relative;
+  width: 330px;
+  height: auto;
+  line-height: 350px;
+  vertical-align: middle;
+  margin-top: -40px;
+}
+#img-csail {
+  position: relative;
+  width: 250px;
+  height: auto;
+  line-height: 350px;
+  vertical-align: middle;
+  margin-top: -20px;
+}
 
 
 .footer {
