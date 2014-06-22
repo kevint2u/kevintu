@@ -5,7 +5,7 @@ $(window).load(function() {
     // progress bar animation
     var bar = document.getElementById('progress-bar'),
         fallback = document.getElementById('download-progress'),
-        loaded = 10;
+        loaded = 0;
     var load = function() {
         loaded += Math.floor((Math.random() * 2) + 3);
         bar.value = loaded;
