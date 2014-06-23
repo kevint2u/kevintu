@@ -306,7 +306,6 @@ progress[value]::-webkit-progress-value {
   position: absolute;
   height: 150px;
   width:100%;
-  /*border-top: 2px solid black;*/
 }
 #footer-image {
   position: absolute;
