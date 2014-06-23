@@ -1,5 +1,3 @@
-// Loading Page
-
 $(window).load(function() {
     $(this).scrollTop(0);
     // progress bar animation
