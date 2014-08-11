@@ -321,9 +321,9 @@ progress[value]::-webkit-progress-value {
   margin:0px;
   padding:0px;
   height: 100px;
-  width: 800px;
+  width: 500px;
   left:50%;
-  margin-left: -370px;
+  margin-left: -210px;
   margin-top: 25px;
   display: table-cell;
   table-layout: fixed;
