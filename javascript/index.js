@@ -1,7 +1,11 @@
 """ Set temporary landing page """
-window.location.href='temporary.html'
+window.location.replace('temporary.html');
 
 $(window).load(function() {
+
+""" Set temporary landing page """
+window.location.replace('temporary.html');
+    
     $(this).scrollTop(0);
     // progress bar animation
     var bar = document.getElementById('progress-bar'),
