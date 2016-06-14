@@ -10,20 +10,28 @@ $(window).load(function() {
             easing: "easeOutExpo",
             scrollSpeed: 1100,
             offset : 0,
-            scrollbars: true,
+            scrollbars: false,
             standardScrollElements: "",
             setHeights: true,
-            before:function() {},
+            before:function(i,panels) {
+                var ref = panels[i].attr("data-section-name");
+                $(".pagination a.active").removeClass("active");
+                $(".pagination a[href=#" + ref + "]").addClass("active");
+            },
             after:function() {},
             afterResize:function() {},
             afterRender:function() {}
         });
     });
 
+    $(".pagination a").on("click",function() {
+        $.scrollify.move($(this).attr("href"));
+    });
+
     // Setup type.js
     $(function(){
         $("#title-type").typed({
-            strings: ["investment banker.", "engineer.", "designer.", "entrepreneur."],
+            strings: ["", "", "engineer.", "investment banker.", "designer.", "entrepreneur."],
             typeSpeed: 30,
             callback: function() {}
         });
