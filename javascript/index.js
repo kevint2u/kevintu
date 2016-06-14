@@ -1,3 +1,6 @@
+""" Set temporary landing page """
+// window.location.href='temporary.html'
+
 $(window).load(function() {
     $(this).scrollTop(0);
     // progress bar animation
