@@ -1,5 +1,5 @@
 """ Set temporary landing page """
-// window.location.href='temporary.html'
+window.location.href='temporary.html'
 
 $(window).load(function() {
     $(this).scrollTop(0);
