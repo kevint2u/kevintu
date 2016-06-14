@@ -1,7 +1,7 @@
 $(window).load(function() {
     $(this).scrollTop(0);
 
-    // Setup Scrollify
+    // Setup scrollify.js
     $(function() {
         $.scrollify({
             section : ".panel",
@@ -17,6 +17,15 @@ $(window).load(function() {
             after:function() {},
             afterResize:function() {},
             afterRender:function() {}
+        });
+    });
+
+    // Setup type.js
+    $(function(){
+        $("#title-type").typed({
+            strings: ["investment banker.", "engineer.", "designer.", "entrepreneur."],
+            typeSpeed: 30,
+            callback: function() {}
         });
     });
 
