@@ -1,3 +1,6 @@
+""" Set temporary landing page """
+window.location.href='temporary.html'
+
 $(window).load(function() {
     $(this).scrollTop(0);
     // progress bar animation
@@ -24,8 +27,6 @@ $(window).load(function() {
 function hideLanding(){
     $(this).scrollTop(0);
     $('#loading').fadeOut(500);
-    """ Set temporary landing page """
-    window.location.href='temporary.html'
 }
 
 // Parallax Scrolling
