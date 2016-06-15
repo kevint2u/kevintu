@@ -34,7 +34,7 @@ html, body {
 .panel.home {
     position: relative;
     border-bottom:1px solid #ddd;
-    background: #DFDFDF url("../resources/background-geo-1-double.jpg") no-repeat top;
+    background: #DFDFDF url("../resources/backgrounds/background-geo-1-double.jpg") no-repeat top;
     background-size:cover;
 }
 
@@ -140,7 +140,7 @@ li {
 .profile {
     position: relative;
     border-bottom:1px solid #ddd;
-    background: #DFDFDF url("../resources/k2-1-bw.jpg") no-repeat left top;
+    background: #DFDFDF url("../resources/profile/k2-1-bw.jpg") no-repeat left top;
     background-size:cover;
 }
 
@@ -163,7 +163,7 @@ li {
 .contact {
     position: relative;
     border-top:1px solid #ddd;
-    background: #ffffff url("../resources/background-geo-1-double.jpg") no-repeat bottom;
+    background: #ffffff url("../resources/backgrounds/background-geo-1-double.jpg") no-repeat bottom;
     background-size:cover;
 }
 
