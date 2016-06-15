@@ -36,5 +36,12 @@ $(window).load(function() {
             callback: function() {}
         });
     });
+    $(function(){
+        $("#contact-text").typed({
+            strings: ["","contact me:"],
+            typeSpeed: 30,
+            callback: function() {}
+        });
+    });
 
 });

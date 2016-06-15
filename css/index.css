@@ -34,7 +34,7 @@ html, body {
 .panel.home {
     position: relative;
     border-bottom:1px solid #ddd;
-    background: #DFDFDF url("../resources/background-geo-1-full.jpg") no-repeat right top;
+    background: #DFDFDF url("../resources/background-geo-1-double.jpg") no-repeat right top;
     background-size:cover;
 }
 
@@ -142,6 +142,44 @@ li {
     vertical-align: middle;
 }
 
+.profile {
+    position: relative;
+    border-bottom:1px solid #ddd;
+    background: #DFDFDF url("../resources/k2-1-bw.jpg") no-repeat left top;
+    background-size:cover;
+}
+
+.education {
+
+}
+
+.finance {
+
+}
+
+.engineering {
+
+}
+
+.misc {
+
+}
+
+.contact {
+
+}
+
+.contact-text-wrapper {
+    position: relative;
+    top:25%;
+    text-align: center;
+    font-size: 75px;
+}
+
+#contact-text {
+    position: relative;
+    margin-top: -100px;
+}
 
 .typed-cursor{
     opacity: 1;
